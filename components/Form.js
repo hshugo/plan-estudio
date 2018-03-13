@@ -24,6 +24,7 @@ class ConnectedForm extends Component {
     event.preventDefault();
     const { title } = this.state;
     const id = uuidv1();
+    console.log(id);
     this.props.addArticle({ title, id });
     this.setState({ title: "" });
   }

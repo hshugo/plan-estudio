@@ -1,15 +1,24 @@
 import React, {Component} from 'react';
+import { connect } from "react-redux";
+const mapStateToProps = state => {
+    console.log("NUEVAS: ", state);
+  return { materias: state.materias };
+};
 
-export default class Codigo extends Component {
-
+class Codigo_ extends Component {
     constructor(){
         super();
     }
     render () {
         return (
-            <span className="codigo_materia">
-                {this.props.codigo}
+            <span className={this.props.materias.filter(m=>m.codigo==this.props.codigo).length? 'active':'inactive'} >
+                -{this.props.codigo}
             </span>
+
         )
     }
 }
+
+
+const Codigo = connect(mapStateToProps)(Codigo_);
+export default Codigo;
