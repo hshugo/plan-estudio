@@ -1,5 +1,11 @@
 import React, {Component} from 'react';
 import { connect } from "react-redux";
+//import './bootstrap.min.css';
+import css from '../style/style.scss';
+
+//import 'style/style.scss';
+
+
 const mapStateToProps = state => {
     console.log("NUEVAS: ", state);
   return { materias: state.materias };

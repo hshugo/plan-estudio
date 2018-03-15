@@ -17,7 +17,6 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
-    "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },
   "babel": {
@@ -42,7 +41,10 @@
     "css-loader": "^0.28.9",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
     "style-loader": "^0.20.1",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "webpack": "^3.11.0"
   }
 }
