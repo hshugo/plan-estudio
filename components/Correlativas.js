@@ -5,12 +5,6 @@ export default class Correlativas extends Component {
 
     constructor(){
         super();
-        //console.log("props recibidas: ",props);
-        /*
-        this.setState({
-            plan
-        });
-        */
     }
     render () {
         const codigos= this.props.codigos || [];

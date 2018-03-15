@@ -37,14 +37,14 @@ function fetchPlan(id, callback) {
             {   codigo: '1023',
                 nombre: 'Análisis Matemático I',
                 cuatrimestre: 1,
-                correlativas: [1,2,3],
+                correlativas: [1023,1024,1025],
                 horas: 8
             },
             {
                 codigo: '1024',
                 nombre: 'Elementos de Programación',
                 cuatrimestre: 1,
-                correlativas: [4,5,6],
+                correlativas: [1023,1026,1028],
                 horas: 8
             }
         ]
@@ -53,5 +53,5 @@ function fetchPlan(id, callback) {
 
     setTimeout(() => {
         callback(data);
-    }, 3000);
+    }, 1000);
 }
