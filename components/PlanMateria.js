@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import uuidv1 from "uuid";
 import Correlativas from './Correlativas';
 import { addMateria } from "../actions/index";
+import { Container, Row, Col } from 'react-grid-system';
 
 const mapDispatchToProps = dispatch => {
   return {
@@ -27,13 +28,14 @@ class PlanMateria_ extends Component {
     }
     render () {
         const materia = this.props.materia;
-
         return (
-            <div className="plan__materia">
-                <input type="checkbox" onChange={this.handleChange} value={materia.codigo}/>{materia.codigo}
-                <h3>{materia.nombre} (cuatrimestre: {materia.cuatrimestre})</h3>
-                <Correlativas codigos={materia.correlativas} />
-            </div>
+            <Container>
+                <Row sm={6}>
+                    <Col sm={2}><input type="checkbox" onChange={this.handleChange} value={materia.codigo}/>{materia.codigo}</Col>
+                    <Col sm={6}>{materia.nombre} (cuatrimestre: {materia.cuatrimestre})</Col>
+                    <Col sm={4}><Correlativas codigos={materia.correlativas} /></Col>
+                </Row>
+            </Container>
         )
     }
 }

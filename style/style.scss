@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+}
+body {
+    font-family: 'Verdana';
+}
 .active{
-    color: red;
+    color: white;
+    background: green;
+    padding: 10px;
 }
 .inactive{
     color:black;

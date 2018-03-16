@@ -7,7 +7,6 @@ export default class PlanMaterias extends Component {
 
         return (
             <div>
-                <h2>Materias del plan</h2>
                 {
                     materias.map(materia => <PlanMateria key={materia.nombre} materia={materia} />)
                 }

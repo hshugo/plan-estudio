@@ -10,9 +10,7 @@ export default class Correlativas extends Component {
         const codigos= this.props.codigos || [];
         console.log("los codigos:",codigos);
         return (
-            <h1 className="materia_correlativas">
-                { codigos.map( codigo => <Codigo key={codigo} codigo={codigo}></Codigo>) }
-            </h1>
+                codigos.map( codigo => <Codigo key={codigo} codigo={codigo}></Codigo>)
         )
     }
 }
