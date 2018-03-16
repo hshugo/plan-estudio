@@ -3,14 +3,22 @@ import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import uuidv1 from "uuid";
 import Correlativas from './Correlativas';
-import { addMateria } from "../actions/index";
+import { addMateria, delMateria } from "../actions/index";
 import { Container, Row, Col } from 'react-grid-system';
 
+/*
 const mapDispatchToProps = dispatch => {
+
   return {
     addMateria: materia => dispatch(addMateria(materia))
   };
 };
+*/
+
+const mapDispatchToProps = {
+  addMateria,
+  delMateria
+}
 
 class PlanMateria_ extends Component {
     constructor() {
@@ -24,7 +32,12 @@ class PlanMateria_ extends Component {
     handleChange(event) {
       this.setState({ [event.target.value]: event.target.value });
       const codigo =event.target.value;
-      this.props.addMateria({ codigo });
+      if( event.target.checked ){
+        this.props.addMateria({ codigo });
+      }else{
+        this.props.delMateria({ codigo });
+      }
+
     }
     render () {
         const materia = this.props.materia;

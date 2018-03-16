@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import css from '../style/style.scss';
 
 const mapStateToProps = state => {
-    console.log("NUEVAS: ", state);
+    //console.log("NUEVAS: ", state);
   return { materias: state.materias };
 };
 
