@@ -134,7 +134,114 @@ function fetchPlan(id, callback) {
                 cuatrimestre: 1,
                 correlativas: [1024,1028],
                 horas: 10
-            }
+            },
+            {
+                codigo: '1111',
+                nombre: 'Probabilidad y Estadística',
+                cuatrimestre: 1,
+                correlativas: [1033],
+                horas: 4
+            },
+
+            {
+                codigo: '1112',
+                nombre: 'Auditoría y Seguridad Informática',
+                cuatrimestre: 1,
+                correlativas: [1026,1109],
+                horas: 4
+            },
+            {
+                codigo: '1113',
+                nombre: 'Programación Avanzada / Incluye TCP',
+                cuatrimestre: 1,
+                correlativas: [1113, 1023 , 1110],
+                horas: 10
+            },
+            {
+            codigo: '1114',
+            nombre: 'Base de Datos',
+            cuatrimestre: 1,
+            correlativas: [1028,1033],
+            horas: 6
+            },
+            {
+            codigo: '1115',
+            nombre: 'Sistemas Operativos',
+            cuatrimestre: 1,
+            correlativas: [1109 , 1110],
+            horas: 8
+            },
+            {
+            codigo: '1116',
+            nombre: 'Análisis de Sistemas / Incluye TCP',
+            cuatrimestre: 1,
+            correlativas: [1028 , 1108],
+            horas: 10
+            },
+            {   codigo: '1117',
+            nombre: 'Cálculo Numérico',
+            cuatrimestre: 1,
+            correlativas: [ 1032 , 1033],
+            horas: 4
+            },
+            {
+            codigo: '1118',
+            nombre: 'Ingeniería de Requerimientos',
+            cuatrimestre: 1,
+            correlativas: [1116],
+            horas: 4
+            },
+            {
+            codigo: '1119',
+            nombre: 'Comunicación de Datos',
+            cuatrimestre: 1,
+            correlativas: [1109 , 1115],
+            horas: 4
+            },
+            {
+            codigo: '1120',
+            nombre: 'Diseño de Sistemas / Incluye TCP',
+            cuatrimestre: 1,
+            correlativas: [1116],
+            horas: 10
+            },
+            {
+            codigo: '1121',
+            nombre: 'Análisis de Software',
+            cuatrimestre: 1,
+            correlativas: [ 1113],
+            horas: 4
+            },
+            {
+            codigo: '1122',
+            nombre: 'Redes de Computadoras',
+            cuatrimestre: 1,
+            correlativas: [1031 , 1119],
+            horas: 8
+            },
+            {
+            codigo: '1123',
+            nombre: 'Sistemas Operativos Avanzados',
+            cuatrimestre: 1,
+            correlativas: [1113 , 1115],
+            horas: 4
+            },
+            {
+            codigo: '1124',
+            nombre: 'Lenguajes y Compiladores',
+            cuatrimestre: 1,
+            correlativas: [1110 , 1115],
+            horas: 10
+            },
+            {
+            codigo: '1125',
+            nombre: 'Gestión Organizacional',
+            cuatrimestre: 1,
+            correlativas: [1026 , 1116],
+            horas: 4
+            },
+
+
         ]
     };
 
