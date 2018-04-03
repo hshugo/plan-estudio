@@ -31,7 +31,7 @@ class PlanMateria_ extends Component {
 
     handleChange(event) {
       this.setState({ [event.target.value]: event.target.value });
-      const codigo =event.target.value;
+      const codigo = event.target.value;
       if( event.target.checked ){
         this.props.addMateria({ codigo });
       }else{
