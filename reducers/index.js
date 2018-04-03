@@ -11,11 +11,9 @@ const rootReducer = (state = initialState, action) => {
     case ADD_SUBJECT:
       return { ...state, materias: [...state.materias, action.payload] };
     case DEL_SUBJECT:
-      let codigo_seteado = action.payload.codigo;
-      let state_subjects = state.materias.filter((materia) => materia.codigo != codigo_seteado );
       return {
         ...state,
-        materias: state_subjects
+        materias: state.materias.filter((materia) => materia.codigo != action.payload.codigo)
       }
     default:
       return state;
