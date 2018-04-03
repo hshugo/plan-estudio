@@ -44,9 +44,9 @@ class PlanMateria_ extends Component {
         return (
             <Container>
                 <Row sm={6}>
-                    <Col sm={2}><input type="checkbox" onChange={this.handleChange} value={materia.codigo}/>{materia.codigo}</Col>
-                    <Col sm={6}>{materia.nombre} (cuatrimestre: {materia.cuatrimestre})</Col>
-                    <Col sm={4}><Correlativas codigos={materia.correlativas} /></Col>
+                    <Col sm={1}><input type="checkbox" onChange={this.handleChange} value={materia.codigo}/>{materia.codigo}</Col>
+                    <Col sm={5}>{materia.nombre} (cuatrimestre: {materia.cuatrimestre})</Col>
+                    <Col sm={6}><Correlativas codigos={materia.correlativas} /></Col>
                 </Row>
             </Container>
         )
